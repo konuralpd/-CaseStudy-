@@ -15,8 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        manageNavigationBar()
         return true
     }
+    
+   private func manageNavigationBar(){
+                if #available(iOS 13.0, *){
+
+                    let navBarAppearance = UINavigationBarAppearance()
+                    navBarAppearance.configureWithOpaqueBackground()
+                    navBarAppearance.backgroundColor = UIColor.systemBlue
+                    navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+                    navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+                    UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).standardAppearance = navBarAppearance
+                    UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self]).scrollEdgeAppearance = navBarAppearance
+                }
+            }
 
     // MARK: UISceneSession Lifecycle
 

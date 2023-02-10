@@ -9,14 +9,32 @@
 /* Begin PBXBuildFile section */
 		04550BAD2992E7CC008F9CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BAC2992E7CC008F9CD3 /* AppDelegate.swift */; };
 		04550BAF2992E7CC008F9CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BAE2992E7CC008F9CD3 /* SceneDelegate.swift */; };
-		04550BB12992E7CC008F9CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BB02992E7CC008F9CD3 /* ViewController.swift */; };
-		04550BB42992E7CC008F9CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04550BB22992E7CC008F9CD3 /* Main.storyboard */; };
 		04550BB72992E7CC008F9CD3 /* VeroCaseStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04550BB52992E7CC008F9CD3 /* VeroCaseStudy.xcdatamodeld */; };
 		04550BB92992E7CF008F9CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04550BB82992E7CF008F9CD3 /* Assets.xcassets */; };
 		04550BBC2992E7CF008F9CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04550BBA2992E7CF008F9CD3 /* LaunchScreen.storyboard */; };
 		04550BC72992E7CF008F9CD3 /* VeroCaseStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BC62992E7CF008F9CD3 /* VeroCaseStudyTests.swift */; };
 		04550BD12992E7CF008F9CD3 /* VeroCaseStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BD02992E7CF008F9CD3 /* VeroCaseStudyUITests.swift */; };
 		04550BD32992E7CF008F9CD3 /* VeroCaseStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BD22992E7CF008F9CD3 /* VeroCaseStudyUITestsLaunchTests.swift */; };
+		04550BE22992E877008F9CD3 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BE12992E877008F9CD3 /* LaunchScreenViewController.swift */; };
+		04550BE72992EC49008F9CD3 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BE62992EC49008F9CD3 /* AuthenticationViewModel.swift */; };
+		04550BEA2992F396008F9CD3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BE92992F396008F9CD3 /* AuthService.swift */; };
+		04550BEC2992F525008F9CD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BEB2992F525008F9CD3 /* LoginViewController.swift */; };
+		04550BEF2992F55B008F9CD3 /* ATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BEE2992F55B008F9CD3 /* ATextField.swift */; };
+		04550BF22992FBA7008F9CD3 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 04550BF12992FBA7008F9CD3 /* ProgressHUD */; };
+		04550BF62992FDF4008F9CD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04550BF52992FDF4008F9CD3 /* HomeViewController.swift */; };
+		047DF8692996EC33004B2F04 /* CoreDataTaskClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DF8682996EC33004B2F04 /* CoreDataTaskClient.swift */; };
+		047DF86B2996F828004B2F04 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DF86A2996F828004B2F04 /* Reachability.swift */; };
+		048B654D2996C69500926200 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 048B654C2996C69500926200 /* LBTATools */; };
+		048B65502996C76700926200 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B654F2996C76700926200 /* ScanViewController.swift */; };
+		048B65522996D3D700926200 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B65512996D3D700926200 /* Extensions.swift */; };
+		04BFE77D2994636C007D4588 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFE77C2994636C007D4588 /* HomeViewModel.swift */; };
+		04BFE77F299464BB007D4588 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFE77E299464BB007D4588 /* NetworkService.swift */; };
+		04BFE782299464F7007D4588 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFE781299464F7007D4588 /* NetworkServiceError.swift */; };
+		04BFE784299465A3007D4588 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFE783299465A3007D4588 /* NetworkManager.swift */; };
+		04BFE787299466E2007D4588 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFE786299466E2007D4588 /* TaskModel.swift */; };
+		04DC4563299561340043269F /* HomeTaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC4562299561340043269F /* HomeTaskCollectionViewCell.swift */; };
+		04DC45662995620B0043269F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC45652995620B0043269F /* UIColor+Extensions.swift */; };
+		04FDAC3B29947207007715E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04FDAC3A29947207007715E6 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +58,6 @@
 		04550BA92992E7CC008F9CD3 /* VeroCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeroCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04550BAC2992E7CC008F9CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04550BAE2992E7CC008F9CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04550BB02992E7CC008F9CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04550BB32992E7CC008F9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04550BB62992E7CC008F9CD3 /* VeroCaseStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VeroCaseStudy.xcdatamodel; sourceTree = "<group>"; };
 		04550BB82992E7CF008F9CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04550BBB2992E7CF008F9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +67,23 @@
 		04550BCC2992E7CF008F9CD3 /* VeroCaseStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeroCaseStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04550BD02992E7CF008F9CD3 /* VeroCaseStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroCaseStudyUITests.swift; sourceTree = "<group>"; };
 		04550BD22992E7CF008F9CD3 /* VeroCaseStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeroCaseStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04550BE12992E877008F9CD3 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		04550BE62992EC49008F9CD3 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		04550BE92992F396008F9CD3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		04550BEB2992F525008F9CD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04550BEE2992F55B008F9CD3 /* ATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATextField.swift; sourceTree = "<group>"; };
+		04550BF52992FDF4008F9CD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		047DF8682996EC33004B2F04 /* CoreDataTaskClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTaskClient.swift; sourceTree = "<group>"; };
+		047DF86A2996F828004B2F04 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		048B654F2996C76700926200 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		048B65512996D3D700926200 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04BFE77C2994636C007D4588 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04BFE77E299464BB007D4588 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		04BFE781299464F7007D4588 /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		04BFE783299465A3007D4588 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04BFE786299466E2007D4588 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		04DC4562299561340043269F /* HomeTaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTaskCollectionViewCell.swift; sourceTree = "<group>"; };
+		04DC45652995620B0043269F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04550BF22992FBA7008F9CD3 /* ProgressHUD in Frameworks */,
+				048B654D2996C69500926200 /* LBTATools in Frameworks */,
+				04FDAC3B29947207007715E6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +137,15 @@
 		04550BAB2992E7CC008F9CD3 /* VeroCaseStudy */ = {
 			isa = PBXGroup;
 			children = (
-				04550BAC2992E7CC008F9CD3 /* AppDelegate.swift */,
-				04550BAE2992E7CC008F9CD3 /* SceneDelegate.swift */,
-				04550BB02992E7CC008F9CD3 /* ViewController.swift */,
-				04550BB22992E7CC008F9CD3 /* Main.storyboard */,
+				04BFE77A29946334007D4588 /* Delegate */,
+				04DC4564299561F00043269F /* Extensions */,
+				04550BED2992F541008F9CD3 /* Custom */,
+				04550BE82992F38E008F9CD3 /* Service */,
+				04550BE32992EC0C008F9CD3 /* Authentication-Module */,
+				04550BDF2992E837008F9CD3 /* Launch-Module */,
+				04550BF32992FDE0008F9CD3 /* Home-Module */,
+				048B654E2996C75500926200 /* Scan-Module */,
+				047DF8612996EB79004B2F04 /* CoreData-Module */,
 				04550BB82992E7CF008F9CD3 /* Assets.xcassets */,
 				04550BBA2992E7CF008F9CD3 /* LaunchScreen.storyboard */,
 				04550BBD2992E7CF008F9CD3 /* Info.plist */,
@@ -130,6 +171,152 @@
 			path = VeroCaseStudyUITests;
 			sourceTree = "<group>";
 		};
+		04550BDF2992E837008F9CD3 /* Launch-Module */ = {
+			isa = PBXGroup;
+			children = (
+				04550BE02992E85C008F9CD3 /* View */,
+			);
+			path = "Launch-Module";
+			sourceTree = "<group>";
+		};
+		04550BE02992E85C008F9CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04550BE12992E877008F9CD3 /* LaunchScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04550BE32992EC0C008F9CD3 /* Authentication-Module */ = {
+			isa = PBXGroup;
+			children = (
+				04550BE52992EC35008F9CD3 /* ViewModel */,
+				04550BE42992EC19008F9CD3 /* View */,
+			);
+			path = "Authentication-Module";
+			sourceTree = "<group>";
+		};
+		04550BE42992EC19008F9CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04550BEB2992F525008F9CD3 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04550BE52992EC35008F9CD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04550BE62992EC49008F9CD3 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04550BE82992F38E008F9CD3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04BFE780299464E9007D4588 /* Network */,
+				04550BE92992F396008F9CD3 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04550BED2992F541008F9CD3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				04550BEE2992F55B008F9CD3 /* ATextField.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		04550BF32992FDE0008F9CD3 /* Home-Module */ = {
+			isa = PBXGroup;
+			children = (
+				04DC4561299561270043269F /* Cell */,
+				04BFE785299466DA007D4588 /* Model */,
+				04BFE77B29946361007D4588 /* ViewModel */,
+				04550BF42992FDE7008F9CD3 /* View */,
+			);
+			path = "Home-Module";
+			sourceTree = "<group>";
+		};
+		04550BF42992FDE7008F9CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04550BF52992FDF4008F9CD3 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		047DF8612996EB79004B2F04 /* CoreData-Module */ = {
+			isa = PBXGroup;
+			children = (
+				047DF8682996EC33004B2F04 /* CoreDataTaskClient.swift */,
+			);
+			path = "CoreData-Module";
+			sourceTree = "<group>";
+		};
+		048B654E2996C75500926200 /* Scan-Module */ = {
+			isa = PBXGroup;
+			children = (
+				048B654F2996C76700926200 /* ScanViewController.swift */,
+			);
+			path = "Scan-Module";
+			sourceTree = "<group>";
+		};
+		04BFE77A29946334007D4588 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				04550BAC2992E7CC008F9CD3 /* AppDelegate.swift */,
+				04550BAE2992E7CC008F9CD3 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		04BFE77B29946361007D4588 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04BFE77C2994636C007D4588 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04BFE780299464E9007D4588 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04BFE77E299464BB007D4588 /* NetworkService.swift */,
+				04BFE781299464F7007D4588 /* NetworkServiceError.swift */,
+				04BFE783299465A3007D4588 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04BFE785299466DA007D4588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BFE786299466E2007D4588 /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DC4561299561270043269F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04DC4562299561340043269F /* HomeTaskCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04DC4564299561F00043269F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04DC45652995620B0043269F /* UIColor+Extensions.swift */,
+				048B65512996D3D700926200 /* Extensions.swift */,
+				047DF86A2996F828004B2F04 /* Reachability.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +333,11 @@
 			dependencies = (
 			);
 			name = VeroCaseStudy;
+			packageProductDependencies = (
+				04550BF12992FBA7008F9CD3 /* ProgressHUD */,
+				04FDAC3A29947207007715E6 /* Alamofire */,
+				048B654C2996C69500926200 /* LBTATools */,
+			);
 			productName = VeroCaseStudy;
 			productReference = 04550BA92992E7CC008F9CD3 /* VeroCaseStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +410,11 @@
 				Base,
 			);
 			mainGroup = 04550BA02992E7CC008F9CD3;
+			packageReferences = (
+				04550BF02992FBA7008F9CD3 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				04FDAC3929947207007715E6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				048B654B2996C69500926200 /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = 04550BAA2992E7CC008F9CD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +433,6 @@
 			files = (
 				04550BBC2992E7CF008F9CD3 /* LaunchScreen.storyboard in Resources */,
 				04550BB92992E7CF008F9CD3 /* Assets.xcassets in Resources */,
-				04550BB42992E7CC008F9CD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +457,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04550BB12992E7CC008F9CD3 /* ViewController.swift in Sources */,
+				048B65502996C76700926200 /* ScanViewController.swift in Sources */,
+				04BFE77F299464BB007D4588 /* NetworkService.swift in Sources */,
+				04BFE782299464F7007D4588 /* NetworkServiceError.swift in Sources */,
+				04550BEC2992F525008F9CD3 /* LoginViewController.swift in Sources */,
+				04BFE784299465A3007D4588 /* NetworkManager.swift in Sources */,
 				04550BAD2992E7CC008F9CD3 /* AppDelegate.swift in Sources */,
+				048B65522996D3D700926200 /* Extensions.swift in Sources */,
+				04550BE72992EC49008F9CD3 /* AuthenticationViewModel.swift in Sources */,
+				04DC4563299561340043269F /* HomeTaskCollectionViewCell.swift in Sources */,
+				047DF8692996EC33004B2F04 /* CoreDataTaskClient.swift in Sources */,
+				04BFE787299466E2007D4588 /* TaskModel.swift in Sources */,
+				04BFE77D2994636C007D4588 /* HomeViewModel.swift in Sources */,
 				04550BAF2992E7CC008F9CD3 /* SceneDelegate.swift in Sources */,
+				04550BEA2992F396008F9CD3 /* AuthService.swift in Sources */,
+				04DC45662995620B0043269F /* UIColor+Extensions.swift in Sources */,
+				04550BF62992FDF4008F9CD3 /* HomeViewController.swift in Sources */,
+				04550BEF2992F55B008F9CD3 /* ATextField.swift in Sources */,
+				04550BE22992E877008F9CD3 /* LaunchScreenViewController.swift in Sources */,
+				047DF86B2996F828004B2F04 /* Reachability.swift in Sources */,
 				04550BB72992E7CC008F9CD3 /* VeroCaseStudy.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +513,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04550BB22992E7CC008F9CD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04550BB32992E7CC008F9CD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04550BBA2992E7CF008F9CD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +650,6 @@
 				INFOPLIST_FILE = VeroCaseStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +677,6 @@
 				INFOPLIST_FILE = VeroCaseStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +808,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04550BF02992FBA7008F9CD3 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		048B654B2996C69500926200 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		04FDAC3929947207007715E6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04550BF12992FBA7008F9CD3 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04550BF02992FBA7008F9CD3 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		048B654C2996C69500926200 /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048B654B2996C69500926200 /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+		04FDAC3A29947207007715E6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FDAC3929947207007715E6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		04550BB52992E7CC008F9CD3 /* VeroCaseStudy.xcdatamodeld */ = {
