@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     private let usernameLabel: UILabel = {
        let label = UILabel()
         label.textColor = .label
-        label.text = "E-Mail"
+        label.text = "Username"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
