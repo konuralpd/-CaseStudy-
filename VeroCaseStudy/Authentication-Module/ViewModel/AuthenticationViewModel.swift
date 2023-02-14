@@ -11,7 +11,7 @@ import ProgressHUD
 
 protocol AuthenticatinViewModelProtocol {
     var delegate: AuthenticationViewModelDelegate? { get set }
-    func login()
+    func login(username: String, password: String)
 }
 
 protocol AuthenticationViewModelDelegate: AnyObject {
@@ -25,8 +25,8 @@ final class AuthenticationViewModel: AuthenticatinViewModelProtocol {
     var userInfo : [String: Any] = [:]
     
     
-    func login() {
-        AuthService.shared.login(username: "365", password: "1") { result in
+    func login(username: String, password: String) {
+        AuthService.shared.login(username: username, password: password) { result in
             switch result {
             case .success(true):
                 self.delegate?.loggedInSuccesfully()

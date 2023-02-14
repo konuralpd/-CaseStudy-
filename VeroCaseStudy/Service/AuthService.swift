@@ -43,21 +43,26 @@ class AuthService {
                   print("nil data received from the server")
                   return
               }
-              do {
-                  if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
+              
+              if httpResponse?.statusCode == 200 {
+                  do {
+                      if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
 
-                      self.userInfo = jsonResponse["oauth"] as! [String : Any]
-                      UserDefaults.standard.set(self.userInfo["access_token"], forKey: "access_token")
-//                      let userDefaults = UserDefaults.standard
-//                      let dictionary = self.userInfo["access_token"]
-//                      userDefaults.set(dictionary, forKey: "token")
-                      completion(.success(true))
-                  } else {
-                      print("Data maybe corrupted or in wrong format")
-                      throw URLError(.badServerResponse)
+                          self.userInfo = jsonResponse["oauth"] as! [String : Any]
+                          UserDefaults.standard.set(self.userInfo["access_token"], forKey: "access_token")
+    //                      let userDefaults = UserDefaults.standard
+    //                      let dictionary = self.userInfo["access_token"]
+    //                      userDefaults.set(dictionary, forKey: "token")
+                          completion(.success(true))
+                      } else {
+                          print("Data maybe corrupted or in wrong format")
+                          throw URLError(.badServerResponse)
+                      }
+                  } catch let error {
+                      print(error.localizedDescription)
                   }
-              } catch let error {
-                  print(error.localizedDescription)
+              } else {
+                  completion(.success(false))
               }
           }
         })

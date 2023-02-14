@@ -49,7 +49,6 @@ class LoginViewController: UIViewController {
         field.textColor = .label
         field.text = "365"
         field.autocorrectionType = .no
-        field.isUserInteractionEnabled = false
         field.translatesAutoresizingMaskIntoConstraints = false
         return field
     }()
@@ -64,7 +63,6 @@ class LoginViewController: UIViewController {
         field.text = "1"
         field.autocapitalizationType = .none
         field.textColor = .label
-        field.isUserInteractionEnabled = false
         field.autocorrectionType = .no
         field.translatesAutoresizingMaskIntoConstraints = false
         return field
@@ -91,7 +89,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         viewModel.delegate = self
-       makeUI()
+        makeUI()
     }
     
     //FUNCTIONS
@@ -139,16 +137,16 @@ class LoginViewController: UIViewController {
     //OBJ-C Functions
     
     @objc private func didTapLogin() {
-        viewModel.login()
+        guard let username = usernameTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        viewModel.login(username: username, password: password)
     }
 
 }
 
 extension LoginViewController: AuthenticationViewModelDelegate {
     func cantLoggedIn() {
-       
-        ProgressHUD.showFailed()
-        ProgressHUD.dismiss()
+        ProgressHUD.showFailed("Username or password is wrong.")
     }
     
     func loggedInSuccesfully() {

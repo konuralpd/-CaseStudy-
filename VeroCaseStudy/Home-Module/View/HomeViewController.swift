@@ -162,7 +162,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 extension HomeViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
-        guard let text = searchBar.text else { return }
+        guard let text = searchBar.text?.lowercased() else { return }
         viewModel.updateSearchResults(text: text)
         DispatchQueue.main.async {
             self.collectionView?.reloadData()
