@@ -47,7 +47,6 @@ class LoginViewController: UIViewController {
             isSecureTextEntry: false)
         field.autocapitalizationType = .none
         field.textColor = .label
-        field.text = "365"
         field.autocorrectionType = .no
         field.translatesAutoresizingMaskIntoConstraints = false
         return field
@@ -60,7 +59,6 @@ class LoginViewController: UIViewController {
             cornerRadius: 8,
             backgroundColor: .secondarySystemBackground,
             isSecureTextEntry: true)
-        field.text = "1"
         field.autocapitalizationType = .none
         field.textColor = .label
         field.autocorrectionType = .no
