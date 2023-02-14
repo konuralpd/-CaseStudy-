@@ -137,15 +137,11 @@
 		04550BAB2992E7CC008F9CD3 /* VeroCaseStudy */ = {
 			isa = PBXGroup;
 			children = (
+				04E67BFC299BF78A00152915 /* Modules */,
 				04BFE77A29946334007D4588 /* Delegate */,
 				04DC4564299561F00043269F /* Extensions */,
 				04550BED2992F541008F9CD3 /* Custom */,
 				04550BE82992F38E008F9CD3 /* Service */,
-				04550BE32992EC0C008F9CD3 /* Authentication-Module */,
-				04550BDF2992E837008F9CD3 /* Launch-Module */,
-				04550BF32992FDE0008F9CD3 /* Home-Module */,
-				048B654E2996C75500926200 /* Scan-Module */,
-				047DF8612996EB79004B2F04 /* CoreData-Module */,
 				04550BB82992E7CF008F9CD3 /* Assets.xcassets */,
 				04550BBA2992E7CF008F9CD3 /* LaunchScreen.storyboard */,
 				04550BBD2992E7CF008F9CD3 /* Info.plist */,
@@ -259,6 +255,7 @@
 		048B654E2996C75500926200 /* Scan-Module */ = {
 			isa = PBXGroup;
 			children = (
+				047DF8612996EB79004B2F04 /* CoreData-Module */,
 				048B654F2996C76700926200 /* ScanViewController.swift */,
 			);
 			path = "Scan-Module";
@@ -315,6 +312,17 @@
 				047DF86A2996F828004B2F04 /* Reachability.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04E67BFC299BF78A00152915 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				04550BDF2992E837008F9CD3 /* Launch-Module */,
+				04550BF32992FDE0008F9CD3 /* Home-Module */,
+				048B654E2996C75500926200 /* Scan-Module */,
+				04550BE32992EC0C008F9CD3 /* Authentication-Module */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
