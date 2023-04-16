@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomeViewModelProtocol {
+protocol HomeViewModelProtocol: AnyObject {
     var delegate: HomeViewModelDelegate? { get set}
     func fetchHomeData()
     func getHomeDataCount() -> Int
@@ -21,7 +21,7 @@ protocol HomeViewModelDelegate: AnyObject {
 }
 
 final class HomeViewModel: HomeViewModelProtocol {
-    var delegate: HomeViewModelDelegate?
+    weak var delegate: HomeViewModelDelegate?
     private lazy var networkManager: NetworkManagerProtocol = NetworkManager()
     private var taskList: [TaskResponseElement]? {
         didSet {
